@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "GSD Logic",
+  "classifications": [ "Solution Template" ],
+  "identity": "GSD.Solution",
+  "name": "GSD Solution",
+  "shortName": "gsdsolution",
+  "sourceName": "SolutionTemplate",
+  "preferNameDirectory": true,
+  "description": "A template for creating a new solution with predefined settings.",
+  "symbols": {
+    "CompanyName": {
+      "type": "parameter",
+      "description": "The name of the company",
+      "replaces": "CompanyName",
+      "datatype": "string",
+      "defaultValue": "GSD Logic"
+    }
+  }
+}

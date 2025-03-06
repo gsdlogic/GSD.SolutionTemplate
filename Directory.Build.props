@@ -1,0 +1,48 @@
+<Project>
+  <PropertyGroup>
+
+    <!--  Build  -->
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+
+    <!--  Output  -->
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+
+    <!--  Strong Naming  -->
+    <SignAssembly>True</SignAssembly>
+    <AssemblyOriginatorKeyFile>../SolutionTemplate.snk</AssemblyOriginatorKeyFile>
+
+    <!--  Package  -->
+    <Company>CompanyName</Company>
+    <Copyright>Copyright © 2025 CompanyName. All Rights Reserved.</Copyright>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <FileVersion>0.0.0.0</FileVersion>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+    <PackageVersion>0.0.0-dev.0</PackageVersion>
+    <InformationalVersion>0.0.0.0 (development)</InformationalVersion>
+    <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
+
+    <!--  Code Analysis  -->
+    <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+    <EnableNETAnalyzers>True</EnableNETAnalyzers>
+    <AnalysisLevel>latest-all</AnalysisLevel>
+
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="../stylecop.json"/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <AdditionalFiles Include="../stylecop.json"/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="StyleCop.Analyzers" Version="1.2.0-beta.556"/>
+  </ItemGroup>
+
+</Project>

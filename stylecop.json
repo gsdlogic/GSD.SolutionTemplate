@@ -1,0 +1,11 @@
+{
+    "$schema": "https://raw.githubusercontent.com/DotNetAnalyzers/StyleCopAnalyzers/master/StyleCop.Analyzers/StyleCop.Analyzers/Settings/stylecop.schema.json",
+    "settings": {
+        "documentationRules": {
+            "companyName": "CompanyName",
+            "copyrightText": "Copyright © 2025 CompanyName. All Rights Reserved.",
+            "documentPrivateElements": true,
+            "documentPrivateFields": true
+        }
+    }
+}
