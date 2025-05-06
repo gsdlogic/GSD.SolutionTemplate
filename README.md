@@ -28,15 +28,25 @@ dotnet new install GSD.SolutionTemplate
 dotnet new gsdsolution -n YourSolutionName
 ```
 
-2. Edit `Directory.Build.Props` update `<Company>` and `<Copyright>` properties accordingly.
-
-3. Create a strong name file. Run this in the solution directory.
+2. Create a strong name file. Run this in the solution directory.
 
 ```
 sn -k YourSolutionName.snk
 ```
 
-4. All projects must be at the same level relative to the solution directory.
+3. Edit `Directory.Build.Props` and update `<Company>` and `<Copyright>` properties accordingly.
+
+4. Edit `stylecop.json` and update `companyName` and `copyrightText` accordingly.
+
+5. A good practice is to create a new Git repository at this point before adding any projects.
+
+```
+git init
+git add .
+git commit -m 'Initial commit'
+```
+
+6. All projects must be at the same level relative to the solution directory.
 
 Example directory structure:
 
