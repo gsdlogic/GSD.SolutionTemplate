@@ -41,9 +41,10 @@ sn -k YourSolutionName.snk
 Example directory structure:
 
 ```
-YourSolutionName.sln
-+-- Project1\Project1.csproj
-+-- Project2\Project2.csproj.
+<root>
+├── YourSolutionName.sln
+├── Project1\Project1.csproj
+└── Project2\Project2.csproj.
 ```
 
 To group similar projects by type, edit `Directory.Build.Props` and replace `../` with `../../` in the path to the `.snk` and `stylecop.jon` files.
@@ -51,14 +52,14 @@ To group similar projects by type, edit `Directory.Build.Props` and replace `../
 Example directory structure:
 
 ```
-YourSolutionName.sln
-+-- Source
-|   +-- Project1\Project1.csproj
-|   +-- Project2\Project2.csproj.
-+-- UnitTests
-    +-- Project1Tests\Project1Tests.csproj
-    +-- Project2Tests\Project2Tests.csproj.
-
+<root>
+├── YourSolutionName.sln
+├── Source
+│   ├── Project1\Project1.csproj
+│   └── Project2\Project2.csproj.
+└── Tests
+    ├── Project1Tests\Project1Tests.csproj
+    └── Project2Tests\Project2Tests.csproj
 ```
 
 ## Uninstall the template
