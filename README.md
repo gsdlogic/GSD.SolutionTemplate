@@ -43,7 +43,7 @@ sn -k YourSolutionName.snk
 ```
 git init
 git add .
-git commit -m 'Initial commit'
+git commit -m 'Initial commit.'
 ```
 
 6. All projects must be at the same level relative to the solution directory.
